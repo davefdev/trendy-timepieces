@@ -5,11 +5,18 @@ height: 60px;
 background-color: black;
 `
 
+const Wrapper = styled.div`
+
+padding: 10px 20px;
+`
 
 const Home = () => {
   return (
     <Container>
-        <Navbar/>
+      <Wrapper>
+        navbar
+              </Wrapper>
+
     </Container>
   )
 }
