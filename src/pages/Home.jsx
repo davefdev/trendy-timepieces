@@ -11,6 +11,11 @@ const Wrapper = styled.div`
   justify-content: space-between;
 `;
 
+const Langauge = styled.span`
+  font-size: 14px;
+  cursor: pointer;
+`;
+
 const Left = styled.div`
   flex: 1;
 `;
@@ -26,7 +31,9 @@ const Home = () => {
   return (
     <Container>
       <Wrapper>
-        <Left>Left</Left>
+        <Left>
+          <Langauge>En</Langauge>
+        </Left>
         <Center>Center</Center>
         <Right>Right</Right>
       </Wrapper>
