@@ -7,14 +7,29 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
   padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
 `;
 
+const Left = styled.div`
+  flex: 1;
+`;
+const Center = styled.div`
+  flex: 1;
+`;
 
+const Right = styled.div`
+  flex: 1;
+`;
 
 const Home = () => {
   return (
     <Container>
-      <Wrapper>navbar</Wrapper>
+      <Wrapper>
+        <Left>Left</Left>
+        <Center>Center</Center>
+        <Right>Right</Right>
+      </Wrapper>
     </Container>
   );
 };
