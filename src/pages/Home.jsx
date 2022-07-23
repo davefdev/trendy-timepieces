@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { Search } from "@material-ui/icons";
+import { Search, ShoppingCartOutlined } from "@material-ui/icons";
+import Badge from "@material-ui/core/Badge";
+import MailIcon from "@material-ui/icons/Mail";
 
 const Container = styled.div`
   height: 60px;
@@ -47,6 +49,14 @@ const Logo = styled.h1`
 
 const Right = styled.div`
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+`;
+
+const MenuItem = styled.div`
+  font-size: 14px;
+  cursor: pointer;
 `;
 
 const Home = () => {
@@ -61,9 +71,19 @@ const Home = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo></Logo>
+          <Logo>DAVEFDEV</Logo>
         </Center>
-        <Right>Right</Right>
+        <Right>
+          <MenuItem>
+          REGISTER</MenuItem>
+          <MenuItem>
+          SIGNIN</MenuItem>
+          <MenuItem>
+          <Badge badgeContent={4} color="primary">
+    <ShoppingCartOutlined/>
+          </Badge>
+          </MenuItem>
+        </Right>
       </Wrapper>
     </Container>
   );
