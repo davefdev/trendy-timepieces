@@ -71,7 +71,7 @@ const Home = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>DAVEFDEV</Logo>
+          <Logo>DAVEFDEV.com</Logo>
         </Center>
         <Right>
           <MenuItem>
